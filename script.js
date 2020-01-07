@@ -62,6 +62,62 @@ function staticLoadPlaces() {
 
             }
         },
+        {
+            name: "TEST8",
+            location: {
+                lat: 46.056001,
+                lng: 14.502019,
+
+            }
+        },
+        {
+            name: "TEST9",
+            location: {
+                lat: 46.056077,
+                lng: 14.502192,
+
+            }
+        },
+        {
+            name: "TEST10",
+            location: {
+                lat: 46.055740,
+                lng: 14.502447,
+
+            }
+        },
+        {
+            name: "TEST11",
+            location: {
+                lat: 46.055759,
+                lng: 14.502470,
+
+            }
+        },
+        {
+            name: "TEST12",
+            location: {
+                lat: 46.055773,
+                lng: 14.502484,
+
+            }
+        },
+        {
+            name: "TEST13",
+            location: {
+                lat: 46.055754,
+                lng: 14.502493,
+
+            }
+        },
+        {
+            name: "TEST14",
+            location: {
+                lat: 46.055152,
+                lng: 14.503557,
+
+            }
+        },
     ];
 }
 function renderPlaces(places) {
