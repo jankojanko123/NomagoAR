@@ -2,12 +2,11 @@ window.onload = () => {
     let places = staticLoadPlaces();
     renderPlaces(places);
 };
+/*
 var x = 1;
 
 setInterval(nonstatic, 5000);
-
 function nonstatic() {
-
     var testRoute = [
         {lat: 46.05634, lon: 14.50158},
         {lat: 46.05625, lon: 14.50167},
@@ -39,7 +38,7 @@ function nonstatic() {
 
     x++;
 }
-/*
+*/
 function staticLoadPlaces() {
     return [
 
@@ -178,5 +177,3 @@ function renderPlaces(places) {
         scene.appendChild(icon);
     });
 }
-
- */
