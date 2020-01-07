@@ -2,22 +2,6 @@ window.onload = () => {
     let places = staticLoadPlaces();
     renderPlaces(places);
 };
-/*
-var testRoute = [
-    {lat: 46.05634, lon: 14.50158},
-    {lat: 46.05625, lon: 14.50167},
-    {lat: 46.05617, lon: 14.50177},
-    {lat: 46.05611, lon: 14.50186},
-    {lat: 46.05601, lon: 14.50198},
-    {lat: 46.05594, lon: 14.50209},
-    {lat: 46.05585, lon: 14.50222},
-    {lat: 46.05578, lon: 14.50232},
-    {lat: 46.05570, lon: 14.50245},
-    {lat: 46.05565, lon: 14.50253},
-];
-
-*/
-
 function staticLoadPlaces() {
     return [
 
@@ -142,16 +126,16 @@ function renderPlaces(places) {
         let latitude = place.location.lat;
         let longitude = place.location.lng;
 
-        // add place icon
-        const icon = document.createElement('a-image');
-        icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
-        icon.setAttribute('name', place.name);
-        icon.setAttribute('src', 'https://image.flaticon.com/icons/svg/526/526763.svg');
+        let model = document.createElement('a-entity');
+        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
+        model.setAttribute('gltf-model', './assets/magnemite/scene.gltf');
+        model.setAttribute('rotation', '0 180 0');
+        model.setAttribute('animation-mixer', '');
+        model.setAttribute('scale', '0.5 0.5 0.5');
 
-        icon.setAttribute('scale', '10, 10');
-
-        icon.addEventListener('loaded', () => window.dispatchEvent(new CustomEvent('gps-entity-place-loaded')));
-
-        scene.appendChild(icon);
+        model.addEventListener('loaded', () => {
+            window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
+        });
+        scene.appendChild(model);
     });
 }
