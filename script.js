@@ -126,16 +126,14 @@ function renderPlaces(places) {
         let latitude = place.location.lat;
         let longitude = place.location.lng;
 
-        let model = document.createElement('a-entity');
-        model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-        model.setAttribute('gltf-model', './assets/station/station.gltf');
-        model.setAttribute('rotation', '0 180 0');
-        model.setAttribute('animation-mixer', '');
-        model.setAttribute('scale', '20 20 20');
+        // add place icon
+        const icon = document.createElement('a-image');
+        icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
+        icon.setAttribute('name', place.name);
+        icon.setAttribute('src', '../assets/station/nomagosign.png');
 
-        model.addEventListener('loaded', () => {
-            window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
-        });
-        scene.appendChild(model);
+        // for debug purposes, just show in a bigger scale, otherwise I have to personally go on places...
+        icon.setAttribute('scale', '20, 20');
+        scene.appendChild(icon);
     });
 }
