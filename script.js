@@ -2,7 +2,7 @@ window.onload = () => {
     let places = staticLoadPlaces();
     renderPlaces(places);
 };
-
+/*
 var testRoute = [
     {lat: 46.05634, lon: 14.50158},
     {lat: 46.05625, lon: 14.50167},
@@ -16,6 +16,7 @@ var testRoute = [
     {lat: 46.05565, lon: 14.50253},
 ];
 
+*/
 
 function staticLoadPlaces() {
     return [
