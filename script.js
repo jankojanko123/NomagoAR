@@ -2,43 +2,21 @@ window.onload = () => {
     let places = staticLoadPlaces();
     renderPlaces(places);
 };
-/*
-var x = 1;
 
-setInterval(nonstatic, 5000);
-function nonstatic() {
-    var testRoute = [
-        {lat: 46.05634, lon: 14.50158},
-        {lat: 46.05625, lon: 14.50167},
-        {lat: 46.05617, lon: 14.50177},
-        {lat: 46.05611, lon: 14.50186},
-        {lat: 46.05601, lon: 14.50198},
-        {lat: 46.05594, lon: 14.50209},
-        {lat: 46.05585, lon: 14.50222},
-        {lat: 46.05578, lon: 14.50232},
-        {lat: 46.05570, lon: 14.50245},
-        {lat: 46.05565, lon: 14.50253},
-    ];
+var testRoute = [
+    {lat: 46.05634, lon: 14.50158},
+    {lat: 46.05625, lon: 14.50167},
+    {lat: 46.05617, lon: 14.50177},
+    {lat: 46.05611, lon: 14.50186},
+    {lat: 46.05601, lon: 14.50198},
+    {lat: 46.05594, lon: 14.50209},
+    {lat: 46.05585, lon: 14.50222},
+    {lat: 46.05578, lon: 14.50232},
+    {lat: 46.05570, lon: 14.50245},
+    {lat: 46.05565, lon: 14.50253},
+];
 
-    let scene = document.querySelector('a-scene');
-    let latitude = testRoute[x].lat;
-    let longitude = testRoute[x].lng;
 
-    // add place icon
-    const icon = document.createElement('a-image');
-    icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
-    icon.setAttribute('name', 'test');
-    icon.setAttribute('src', 'https://image.flaticon.com/icons/svg/526/526763.svg');
-
-    icon.setAttribute('scale', '10, 10');
-
-    icon.addEventListener('loaded', () => window.dispatchEvent(new CustomEvent('gps-entity-place-loaded')));
-
-    scene.appendChild(icon);
-
-    x++;
-}
-*/
 function staticLoadPlaces() {
     return [
 
@@ -156,7 +134,6 @@ function staticLoadPlaces() {
         },
     ];
 }
-
 function renderPlaces(places) {
     let scene = document.querySelector('a-scene');
 
