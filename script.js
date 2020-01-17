@@ -118,6 +118,86 @@ function staticLoadPlaces() {
 
             }
         },
+        {
+            name: "kolosej",
+            location: {
+                lat: 46.065666,
+                lng: 14.548416,
+
+            }
+        },
+        {
+            name: "gledališče",
+            location: {
+                lat: 46.065656,
+                lng: 14.545677,
+
+            }
+        },
+        {
+            name: "trg mladih",
+            location: {
+                lat: 46.067153,
+                lng: 14.543929,
+
+            }
+        },
+        {
+            name: "a1",
+            location: {
+                lat: 46.068262,
+                lng: 14.541971,
+
+            }
+        },
+        {
+            name: "w/e",
+            location: {
+                lat: 46.066914,
+                lng: 14.541926,
+
+            }
+        },
+        {
+            name: "tržnica",
+            location: {
+                lat: 46.064166,
+                lng: 14.543557,
+
+            }
+        },
+        {
+            name: "emporium",
+            location: {
+                lat: 46.061828,
+                lng: 14.545029,
+
+            }
+        },
+        {
+            name: "sara",
+            location: {
+                lat: 46.062071,
+                lng: 14.544957,
+
+            }
+        },
+        {
+            name: "španska",
+            location: {
+                lat: 46.063054,
+                lng: 14.545251,
+
+            }
+        },
+        {
+            name: "w/e2",
+            location: {
+                lat: 46.063461,
+                lng: 14.548218,
+
+            }
+        },
     ];
 }
 function renderPlaces(places) {
