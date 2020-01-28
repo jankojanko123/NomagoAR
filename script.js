@@ -217,9 +217,10 @@ function renderPlaces(places) {
 
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-        model.setAttribute('obj-model', './assets/station/station.obj');
+        model.setAttribute('gltf-model', './assets/station/station.gltf');
         model.setAttribute('rotation', '0 0 0');
         model.setAttribute('scale', '15 15 15');
+        model.setAttribute('light', 'type: point; intensity: 5');
 
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
