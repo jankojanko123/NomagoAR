@@ -220,7 +220,7 @@ function renderPlaces(places) {
         model.setAttribute('gltf-model', './assets/station/station.gltf');
         model.setAttribute('rotation', '0 0 0');
         model.setAttribute('scale', '15 15 15');
-        model.setAttribute('light', 'type: point; intensity: 5');
+        //model.setAttribute('light', 'type: point; intensity: 5');
 
         model.addEventListener('loaded', () => {
             window.dispatchEvent(new CustomEvent('gps-entity-place-loaded'))
