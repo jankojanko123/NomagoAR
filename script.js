@@ -198,6 +198,14 @@ function staticLoadPlaces() {
 
             }
         },
+        {
+            name: "Kranj Študentski Dom",
+            location: {
+                lat: 46.251947,
+                lng: 14.350052,
+
+            }
+        },
     ];
 }
 function renderPlaces(places) {
