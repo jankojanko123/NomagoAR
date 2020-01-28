@@ -216,7 +216,7 @@ function renderPlaces(places) {
 
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
-        model.setAttribute('gltf-model', 'Btc_Project/NomagoAR/public/functions/assets/station/station.gltf');
+        model.setAttribute('gltf-model', './functions/assets/station/station.gltf');
         model.setAttribute('rotation', '0 0 0');
         model.setAttribute('scale', '15 15 15');
         //model.setAttribute('light', 'type: point; intensity: 5');
