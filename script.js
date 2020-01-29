@@ -238,6 +238,14 @@ function staticLoadPlaces() {
 
             }
         },
+        {
+            name: "Anže doma most",
+            location: {
+                lat: 46.117065,
+                lng: 14.461667,
+
+            }
+        }
     ];
 }
 function renderPlaces(places) {
