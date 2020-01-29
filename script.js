@@ -214,6 +214,30 @@ function staticLoadPlaces() {
 
             }
         },
+        {
+            name: "Anže doma2",
+            location: {
+                lat: 46.116148,
+                lng: 14.462442,
+
+            }
+        },
+        {
+            name: "Anže doma3",
+            location: {
+                lat: 46.116148,
+                lng: 14.462442,
+
+            }
+        },
+        {
+            name: "Anže doma4",
+            location: {
+                lat: 46.116248,
+                lng: 14.462649,
+
+            }
+        },
     ];
 }
 function renderPlaces(places) {
